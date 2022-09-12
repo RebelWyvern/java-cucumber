@@ -45,7 +45,13 @@
 			<artifactId>jacoco-maven-plugin</artifactId>
 			<version>0.8.7</version>
 		</dependency>
-	</dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
 
 	<build>
 		<pluginManagement>
