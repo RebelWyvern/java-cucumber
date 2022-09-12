@@ -37,6 +37,7 @@
       Then The output should be
       """
       50,0
+
       """
 
 
@@ -53,6 +54,7 @@
       Then The output should be
       """
       3,2
+
       """
 
     Scenario: Run program with input
@@ -68,6 +70,7 @@
       Then The output should be
       """
       61,5
+
       """
 
     Scenario: Run program with input
@@ -83,6 +86,7 @@
       Then The output should be
       """
       20,0
+
       """
 
     Scenario: Run program with input

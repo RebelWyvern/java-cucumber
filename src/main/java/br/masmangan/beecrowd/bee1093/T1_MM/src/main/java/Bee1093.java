@@ -25,37 +25,37 @@ public class Bee1093 {
 
         Scanner in = new Scanner(System.in);  // Create a Scanner object
 
-        ev1 = in.nextInt();  // Read user input
-        ev2 = in.nextInt();
-        at = in.nextInt();
-        d = in.nextInt();
+        for(;;) {
+            ev1 = in.nextInt();  // Read user input
+            ev2 = in.nextInt();
+            at = in.nextInt();
+            d = in.nextInt();
 
-        in.close();
 
-        double p;
+            double p;
 
-        if(ev1 == 0 && ev2 == 0 && at == 0 && d == 0)
-        {
-            return;
+            if (ev1 == 0 && ev2 == 0 && at == 0 && d == 0) {
+                return;
+            }
+
+            aux = ev1;
+            ev1 = 0;
+            while (aux > 0) {
+                aux -= d;
+                ev1++;
+            }
+            aux = ev2;
+            ev2 = 0;
+            while (aux > 0) {
+                aux -= d;
+                ev2++;
+            }
+
+            p = gambler(ev1, ev2, at);
+
+            out.printf(String.format("%.1f\n", p * 100));
+            return;//remover para rodar no beecrown
         }
-
-        aux = ev1;
-        ev1 = 0;
-        while(aux > 0){
-            aux -= d;
-            ev1++;
-        }
-        aux = ev2;
-        ev2 = 0;
-        while(aux > 0){
-            aux -= d;
-            ev2++;
-        }
-
-        p = gambler(ev1,ev2,at);
-
-        out.printf(String.format("%.1f",p*100));
-
     }
 
 }
