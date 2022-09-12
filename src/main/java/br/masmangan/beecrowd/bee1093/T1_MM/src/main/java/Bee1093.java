@@ -54,7 +54,7 @@ public class Bee1093 {
             p = gambler(ev1, ev2, at);
 
             out.printf(String.format("%.1f\n", p * 100));
-            return;//remover para rodar no beecrown
+            //return;//remover para rodar no beecrown
         }
     }
 

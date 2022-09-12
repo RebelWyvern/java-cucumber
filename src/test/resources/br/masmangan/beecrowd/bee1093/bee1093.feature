@@ -32,6 +32,10 @@
       1
       3
       1
+      0
+      0
+      0
+      0
       """
       When Program runs
       Then The output should be
@@ -49,6 +53,10 @@
       2
       1
       1
+      0
+      0
+      0
+      0
       """
       When Program runs
       Then The output should be
@@ -65,6 +73,10 @@
       5
       3
       1
+      0
+      0
+      0
+      0
       """
       When Program runs
       Then The output should be
@@ -81,6 +93,10 @@
       5
       2
       4
+      0
+      0
+      0
+      0
       """
       When Program runs
       Then The output should be
